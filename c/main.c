@@ -44,7 +44,7 @@ int main(void)
 
     while(1)
     {
-        for(int i=0 ; i<500000 ; i++);
+        for(int i=0 ; i<500000 ; i++) __asm__("NOP");
         if(led_flag == 1) {
 		 	green_led_on();
 		 	led_flag = 0;

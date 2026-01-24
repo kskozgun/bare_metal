@@ -39,7 +39,8 @@ FPU_FLAGS   = -mfloat-abi=soft
 STD_FLAGS   = -std=c99
 
 # Optimization (-O0, -O1, -O2, -O3, -Os, -Og)
-OPT_FLAGS   = -Os
+OPT_FLAGS   = -O0
+
 # Dead code elimination
 SECTION_FLAGS = -ffunction-sections -fdata-sections
 
@@ -95,7 +96,7 @@ clean:
 #------------------------------------------------------------------------------
 # Flash/Debug Targets
 #------------------------------------------------------------------------------
-flash: $(BUILD_DIR)/$(TARGET).elf
+flash:
 	$(OPENOCD) -s ../scripts -f board/st_nucleo_f4.cfg \
 		-c "init; reset halt; flash write_image erase $(BUILD_DIR)/$(TARGET).elf; reset run; exit"
 
