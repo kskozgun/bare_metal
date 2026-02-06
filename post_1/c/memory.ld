@@ -7,7 +7,8 @@ MEMORY
     RAM (rwx)   : ORIGIN = 0x20000000, LENGTH = 128K
 }
 
-_start_of_stack = ORIGIN(RAM) + LENGTH(RAM);
+/* Stack grows down and shoul be located end of the RAM */
+_estack = ORIGIN(RAM) + LENGTH(RAM);
 
 /*
  * SECTIONS
@@ -18,7 +19,6 @@ SECTIONS
     .text :
     {
         . = ALIGN(4);
-        LONG(_start_of_stack) /* Initial Stack Pointer */
         /* ISR Vector Table - must be at address 0x08000000 */
         KEEP(*(.vector_table_sec))
         /* Collect all .text sections from input files */

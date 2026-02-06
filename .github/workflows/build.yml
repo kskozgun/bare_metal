@@ -18,6 +18,6 @@ jobs:
 
       - name: Build C project
         run: |
-          cd c
+          cd post_1/c
           make
           make size

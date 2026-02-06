@@ -107,8 +107,6 @@ RAM (0x20000000)
    - Zeros `.bss` section
    - Calls `main()`
 
-***Note***:
-
 ## Key Files Explained
 
 ### startup.c
