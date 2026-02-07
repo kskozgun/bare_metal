@@ -5,7 +5,7 @@ on:
   pull_request:
 
 jobs:
-  build:
+  build-post1:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -19,5 +19,22 @@ jobs:
       - name: Build C project
         run: |
           cd post_1/c
+          make
+          make size
+
+  build-post2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install ARM GCC toolchain
+        uses: carlosperate/arm-none-eabi-gcc-action@v1
+        with:
+          release: '14.2.Rel1'
+
+      - name: Build C++ project
+        run: |
+          cd post_2/cpp
           make
           make size
