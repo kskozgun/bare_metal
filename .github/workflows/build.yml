@@ -61,4 +61,26 @@ jobs:
           cd post_3/cpp
           make
           make size
+  build-post4:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install ARM GCC toolchain
+        uses: carlosperate/arm-none-eabi-gcc-action@v1
+        with:
+          release: '14.2.Rel1'
+
+      - name: Build C project
+        run: |
+          cd post_4/c
+          make
+          make size
+
+      - name: Build C++ project
+        run: |
+          cd post_4/cpp
+          make
+          make size
 
