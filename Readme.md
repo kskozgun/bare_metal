@@ -36,7 +36,8 @@ This repository explores different programming languages for bare-metal embedded
 | Post-1 | ✅ Complete | [Post](https://medium.com/@ozgunkgunyeli/22195bda80a2)  | Bare-metal C setup and blink example |
 | Post-2 | ✅ Complete | [Post](https://medium.com/@ozgunkgunyeli/from-scratch-exploring-bare-metal-c-vs-c-part-2-22195bda80a2) | Transform bare-metal from C to C++ |
 | Post-3 | ✅ Complete | [Post](https://medium.com/@ozgunkgunyeli/from-scratch-exploring-bare-metal-c-vs-c-part-3-a2f2bf0362ac) | Reduce binary size of C++ and compare with C |
-| Post-4 | 🚧 Planned | - | Using C++ core features in bare-metal C++ implementation |
+| Post-4 | ✅ Complete | [Post](https://medium.com/@ozgunkgunyeli/from-scratch-exploring-bare-metal-c-vs-c-part-4-2d09b3e733bf) | Introduction to C++ core features in bare-metal |
+| Post-5 | ⏳ In Progress | - | constuctor for proper initilization and strong types in C++ |
 
 ## License
 
