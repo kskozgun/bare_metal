@@ -118,12 +118,6 @@ jobs:
         with:
           release: '14.2.Rel1'
 
-      - name: Build C project
-        run: |
-          cd post_6/c
-          make
-          make size
-
       - name: Build C++ project
         run: |
           cd post_6/cpp
