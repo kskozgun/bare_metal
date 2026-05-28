@@ -38,6 +38,8 @@ This repository explores different programming languages for bare-metal embedded
 | Post-3 | ✅ Complete | [Post](https://medium.com/@ozgunkgunyeli/from-scratch-exploring-bare-metal-c-vs-c-part-3-a2f2bf0362ac) | Reduce binary size of C++ and compare with C |
 | Post-4 | ✅ Complete | [Post](https://medium.com/@ozgunkgunyeli/from-scratch-exploring-bare-metal-c-vs-c-part-4-2d09b3e733bf) | Introduction to C++ core features in bare-metal |
 | Post-5 | ✅ Complete | [Post](https://medium.com/@ozgunkgunyeli/from-scratch-exploring-bare-metal-c-vs-c-part-5-d8202db38d28) | constuctor for proper initilization and strong types in C++ |
+| Post-6 | ✅ Complete | [Post](https://medium.com/@ozgunkgunyeli/from-scratch-exploring-bare-metal-c-part-6-8f897a99fd0e) | Scope enums for ensuring correct type |
+| Post-7 | 🚧 In Progress | TBD | Template usage in embedded systems |
 
 ## License
 
